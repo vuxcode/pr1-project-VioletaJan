@@ -4,5 +4,5 @@
 
 For example: 
 
-- 2022-04-06 Worked for 1 hour.
+- 2022-04-06 Worked for 2 hour.
   - Created the variables and buttons.
