@@ -1,4 +1,4 @@
-
+<h1 id="output"></h1>
 <button id ="latteButton">Run Function</button>
 <button id ="cappuchinoButton">Run Function</button>
 <button id ="frappinoButton">Run Function</button>
@@ -15,10 +15,18 @@ var myButton1 = document.getElementById("latteButton");
 var myButton2 = document.getElementById("capucchinoButton");
 var myButton3 = document.getElementById("frappinoButton");
 
-// Give all the possible choices
-document.write("Please choose a coffee you want to make: " + myButton1 + myButton2 + myButton3);
+var output = document.getElementById("output");
 
+// Give all the possible choices
+output.innerText = "Please choose a coffee you want to make: ";
+
+myButton1.innerText = coffee[0];
 // Add the click event to the button to run the funcion
-myButton1.addEventListener("click");
+myButton1.addEventListener("click", myFunction);
+
+function myFunction() {
+  output.innerText = "QUESTION 2";
+  myButton1.innerText = "OPTION 2";
+}
 
 </script>
