@@ -1,1 +1,24 @@
-<!-- Start writing your project code in this file! -->
+
+<button id ="latteButton">Run Function</button>
+<button id ="cappuchinoButton">Run Function</button>
+<button id ="frappinoButton">Run Function</button>
+
+<script>
+    //Welcome message
+var welcome = confirm("Welcome to Cofee Making Game! Would you like to start?");
+
+// Create variables in array
+var coffee = ["Latte", "Cappuchino", "Frappino"];
+
+//Create variables to the buttons
+var myButton1 = document.getElementById("latteButton");
+var myButton2 = document.getElementById("capucchinoButton");
+var myButton3 = document.getElementById("frappinoButton");
+
+// Give all the possible choices
+document.write("Please choose a coffee you want to make: " + myButton1 + myButton2 + myButton3);
+
+// Add the click event to the button to run the funcion
+myButton1.addEventListener("click");
+
+</script>
