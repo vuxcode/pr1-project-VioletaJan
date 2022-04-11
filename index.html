@@ -1,19 +1,19 @@
 <h1 id="output"></h1>
-<button id ="latteButton">Run Function</button>
-<button id ="cappuchinoButton">Run Function</button>
-<button id ="frappinoButton">Run Function</button>
+<button id ="button1">Latte</button>
+<button id ="button2">Cappuchino</button>
+<button id ="button3">Frappino</button>
 
 <script>
-    //Welcome message
+//Welcome message
 var welcome = confirm("Welcome to Cofee Making Game! Would you like to start?");
 
 // Create variables in array
 var coffee = ["Latte", "Cappuchino", "Frappino"];
 
 //Create variables to the buttons
-var myButton1 = document.getElementById("latteButton");
-var myButton2 = document.getElementById("capucchinoButton");
-var myButton3 = document.getElementById("frappinoButton");
+var myButton1 = document.getElementById("button1");
+var myButton2 = document.getElementById("button2");
+var myButton3 = document.getElementById("button3");
 
 var output = document.getElementById("output");
 
@@ -21,12 +21,60 @@ var output = document.getElementById("output");
 output.innerText = "Please choose a coffee you want to make: ";
 
 myButton1.innerText = coffee[0];
-// Add the click event to the button to run the funcion
-myButton1.addEventListener("click", myFunction);
 
-function myFunction() {
-  output.innerText = "QUESTION 2";
-  myButton1.innerText = "OPTION 2";
+// Add the click event to the button to run the funcion
+myButton1.addEventListener("click", myFunctionSize);
+
+//myButton2.addEventListener("click", myFunction);
+
+function myFunctionSize() {
+  output.innerText = "Which size would you like?";
+  myButton1.innerText = "Small";
+  myButton2.innerText = "Standart";
+  myButton3.style.visibility = "hidden";
 }
+/*
+//To find out which one button was pushed
+if(document.getElementById('button1').clicked == true)
+{
+  function myFunctionGrams(){
+   output.innerText = "How many grams of espresso you should grind?";
+   myButton1.innerText = "9g";
+   myButton2.innerText = "18g"; // Right answer
+   myButton3.style.visibility = "visible";
+   myButton3.innerText = "36g";
+  }
+}
+
+else if(document.getElementById('button2').clicked == true)
+{
+  function myFunctionGrams(){
+   output.innerText = "How many grams of espresso you should grind?";
+   myButton1.innerText = "9g";
+   myButton2.innerText = "18g";
+   myButton3.innerText = "36g"; // Right answer
+  }
+}
+
+
+if (myFunctionSize = myButton1){
+  function myFunctionMilk(){
+   output.innerText = "How much milk would you use?";
+   myButton1.innerText = "100ml";// Right answer
+   myButton2.innerText = "200ml"; 
+   myButton3.innerText = "300ml";
+  }
+
+
+else if(myFunctionSize = myButton2)
+{
+  function myFunctionMilk(){
+   output.innerText = "How much milk would you use?";
+   myButton1.innerText = "100ml";
+   myButton2.innerText = "200ml"; // Right answer
+   myButton3.innerText = "300ml";
+  }
+}
+*/
 
 </script>
