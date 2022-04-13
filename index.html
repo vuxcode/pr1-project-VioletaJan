@@ -28,7 +28,7 @@ var answers = [
   ["1-2 cm", "2-3 cm", "3-4 cm"]
 ]
 //console.log(answers);
-/*
+
 var questionsFrapino = [
   "1. What size would you like to make?",
   "2. How much ice would you add?",
@@ -38,7 +38,17 @@ var questionsFrapino = [
   "6. How long you will mix it?",
   "7. Would you like cream on top?"
 ]
-*/
+
+var answers2 = [
+["Small", "Standart"],
+["1/3 cup", "1/2 cup", "1 cup"],
+["1/3 cup", "1/2 cup", "1 cup"],
+["Strawberry", "Chocolate", "Banana"],
+["1 and a half", "2 and a half", "3"],
+["10s", "20s", "30s"],
+["Yes", "No"]
+]
+
 
 //Store input in an array
 var input = [];
@@ -110,6 +120,62 @@ function myFunction(reference) {
   myButton2.innerText = answers[4][1];
   myButton3.innerText = answers[4][2];
   }
+
+
+
+  //FRAPINO
+  /*
+  function myFunction3 (reference) {
+  console.log("BUTTON PUSHED! = " + reference);
+  // Store the reference to which button was pushed
+  input2[index2] = (reference);
+  index2++;
   
+  if (index2 == 1){
+  output.innerText = questionsFrapino[index];
+  myButton1.innerText = answers2[0][0];
+  myButton2.innerText = answers2[0][1];
+  myButton3.style.visibility = "hidden";
+  }
+
+  if (index2 == 2){
+  output.innerText = questionsFrapino[index];
+  myButton1.innerText = answers2[1][0];
+  myButton2.innerText = answers2[1][1];
+  myButton3.style.visibility = "visible";
+  myButton3.innerText = answers2[1][2];
+  }
+*/
+
+// ORGANIZE THE ANSWERS FOR INPUTS
+/*
+if (input = [1,1,1,1,1,1]){
+ document.write("Your cofffe is tasteless and cold!");
+
+ else if (input = [1,2,1,1,1,1]){
+ document.write("Oh no, it was too much milk, you need to start again!");
+ }
+}
+
+OR
+
+switch(input) {
+  case "[1,1,1,1,1,1]":
+    document.write("Your cofffe is tasteless and cold!");
+    break;
+  case "[1,2,1,1,1,1]":
+    document.write("Oh no, it was too much milk, you need to start again!");
+    break;
+  default:
+
+
+  OR
+
+  Should I use a for loop, to go through the answers and stop at the point then
+  it doesn't make sence to go futher. (If choose small size and too much milk, we can run the 
+  program again.)
+
+
+
 }
 </script>
