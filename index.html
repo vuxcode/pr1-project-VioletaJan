@@ -27,7 +27,7 @@ var answers = [
   ["10s","15s", "20s" ],
   ["1-2 cm", "2-3 cm", "3-4 cm"]
 ]
-console.log(answers);
+//console.log(answers);
 /*
 var questionsFrapino = [
   "1. What size would you like to make?",
@@ -48,9 +48,9 @@ console.log(input);
 var myButton1 = document.getElementById("button1");
 var myButton2 = document.getElementById("button2");
 var myButton3 = document.getElementById("button3");
-console.log(myButton1)
-console.log(myButton2)
-console.log(myButton3)
+//console.log(myButton1)
+//console.log(myButton2)
+//console.log(myButton3)
 var output = document.getElementById("output");
 
 var index = 0;  
@@ -78,7 +78,7 @@ function myFunction(reference) {
   myButton2.innerText = answers[0][1];
   myButton3.style.visibility = "hidden";
   }
-  console.log ("works 1");
+  //console.log ("works 1");
 
   if (index == 2){
   output.innerText = questionsCoffee[index];
@@ -87,7 +87,7 @@ function myFunction(reference) {
   myButton3.style.visibility = "visible";
   myButton3.innerText = answers[1][2];
   }
-  console.log ("works 2");
+  //console.log ("works 2");
 
   if (index == 3){
   output.innerText = questionsCoffee[index];
@@ -95,7 +95,7 @@ function myFunction(reference) {
   myButton2.innerText = answers[2][1];
   myButton3.innerText = answers[2][2];
   }
-  console.log ("works 3");
+  //console.log ("works 3");
 
   if (index == 4){
   output.innerText = questionsCoffee[index];
@@ -111,90 +111,5 @@ function myFunction(reference) {
   myButton3.innerText = answers[4][2];
   }
   
-
-/*
-  console.log("check 1");
-  // 1. Questions answers
-  output.innerText = questionsCoffee[1];
-  myButton1.innerText = "9g";
-  myButton2.innerText = "18g";
-  myButton3.style.visibility = "vissible";
-  myButton3.innerText = "36g";
-
-  // 2. Questions answers
-  output.innerText = questionsCoffee[2];
-  myButton1.innerText = "50 ml";
-  myButton2.innerText = "100 ml";
-  myButton3.innerText = "150 ml";
-
-  //3. Questions answers
-  output.innerText = questionsCoffee[3];
-  myButton1.innerText = "10s";
-  myButton2.innerText = "20s";
-  myButton3.innerText = "30s";
-
-  //4.Questions answers
-  output.innerText = questionsCoffee[4];
-  myButton1.innerText = "1-2 cm";
-  myButton2.innerText = "2-3 cm";
-  myButton3.innerText = "1-3 cm";
-*/
-
-
-// Add the click event to the button to run the funcion
-//myButton1.addEventListener("click", myFunctionSize);
-
-//myButton2.addEventListener("click", myFunction);
-/**
-function myFunctionSize() {
-  output.innerText = "Which size would you like?";
-  myButton1.innerText = "Small";
-  myButton2.innerText = "Standart";
-  myButton3.style.visibility = "hidden";
-}
-**/
-/*
-//To find out which one button was pushed
-if(document.getElementById('button1').clicked == true)
-{
-  function myFunctionGrams(){
-   output.innerText = "How many grams of espresso you should grind?";
-   myButton1.innerText = "9g";
-   myButton2.innerText = "18g"; // Right answer
-   myButton3.style.visibility = "visible";
-   myButton3.innerText = "36g";
-  }
-}
-
-else if(document.getElementById('button2').clicked == true)
-{
-  function myFunctionGrams(){
-   output.innerText = "How many grams of espresso you should grind?";
-   myButton1.innerText = "9g";
-   myButton2.innerText = "18g";
-   myButton3.innerText = "36g"; // Right answer
-  }
-}
-
-
-if (myFunctionSize = myButton1){
-  function myFunctionMilk(){
-   output.innerText = "How much milk would you use?";
-   myButton1.innerText = "100ml";// Right answer
-   myButton2.innerText = "200ml"; 
-   myButton3.innerText = "300ml";
-  }
-
-
-else if(myFunctionSize = myButton2)
-{
-  function myFunctionMilk(){
-   output.innerText = "How much milk would you use?";
-   myButton1.innerText = "100ml";
-   myButton2.innerText = "200ml"; // Right answer
-   myButton3.innerText = "300ml";
-  }
-}
-*/
 }
 </script>
