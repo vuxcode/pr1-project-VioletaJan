@@ -33,6 +33,7 @@ var questionsFrapino = [
 
 //Store input in an array
 var input = [];
+console.log(input);
 
 //Create variables to the buttons
 var myButton1 = document.getElementById("button1");
@@ -43,8 +44,7 @@ console.log(myButton2)
 console.log(myButton3)
 var output = document.getElementById("output");
 
-var index = 0;
-
+var index = 0;  
 output.innerText = questionsCoffee[index];
 
 myButton1.innerText = Latte[0];
@@ -80,6 +80,19 @@ function myFunction(reference) {
   myButton1.innerText = "50 ml";
   myButton2.innerText = "100 ml";
   myButton3.innerText = "150 ml";
+
+  //3. Questions answers
+  output.innerText = questionsCoffee[3];
+  myButton1.innerText = "10s";
+  myButton2.innerText = "20s";
+  myButton3.innerText = "30s";
+
+  //4.Questions answers
+  output.innerText = questionsCoffee[4];
+  myButton1.innerText = "1-2 cm";
+  myButton2.innerText = "2-3 cm";
+  myButton3.innerText = "1-3 cm";
+
 
 
 // Add the click event to the button to run the funcion
