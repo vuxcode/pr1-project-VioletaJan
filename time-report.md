@@ -6,5 +6,7 @@ For example:
 
 - 2022-04-06 Worked for 2 hour.
   - Created the variables and buttons.
-- 2022-04-11 
-  - 
+- 2022-04-12 Worked for 1 hour.
+  - Rewrite the code for questions.
+  - added hidden and vissable button options.
+  - added "back" button.

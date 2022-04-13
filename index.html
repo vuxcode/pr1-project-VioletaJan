@@ -1,38 +1,99 @@
 <h1 id="output"></h1>
-<button id ="button1">Latte</button>
-<button id ="button2">Cappuchino</button>
-<button id ="button3">Frappino</button>
+<button id ="button1" onclick="myFunction(1)">Latte</button>
+<button id ="button2" onclick="myFunction(2)">Cappuchino</button>
+<button id ="button3" onclick="myFunction(3)">Frappino</button>
+<button id = "back" onclick="back()">Back</button>
 
 <script>
 //Welcome message
-var welcome = confirm("Welcome to Cofee Making Game! Would you like to start?");
+//var welcome = confirm("Welcome to Cofee Making Game! Would you like to start?");
 
 // Create variables in array
-var coffee = ["Latte", "Cappuchino", "Frappino"];
+var coffee = ["Latte", "Cappuchino", "Frapino"];
+
+//Create questions for caffee
+var questionsCoffee =[
+  "Please choose a coffee you want to make: ",
+  "1. How many grams of espresso you should grind?",
+  "2. How much milk would you like to add?",
+  "3. How long will you heat the milk?",
+  "4. How much foam you should get?"
+]
+/*
+var questionsFrapino = [
+  "1. What size would you like to make?",
+  "2. How much ice would you add?",
+  "3. How much frapino mix would you add?",
+  "4. Which flavor would you choose?",
+  "5. How many pupmps of syrup would you add?",
+  "6. How long you will mix it?",
+  "7. Would you like cream on top?"
+]
+*/
+
+//Store input in an array
+var input = [];
 
 //Create variables to the buttons
 var myButton1 = document.getElementById("button1");
 var myButton2 = document.getElementById("button2");
 var myButton3 = document.getElementById("button3");
-
+console.log(myButton1)
+console.log(myButton2)
+console.log(myButton3)
 var output = document.getElementById("output");
 
-// Give all the possible choices
-output.innerText = "Please choose a coffee you want to make: ";
+var index = 0;
 
-myButton1.innerText = coffee[0];
+output.innerText = questionsCoffee[index];
+
+myButton1.innerText = Latte[0];
+myButton2.innerText = Cappuchino[1];
+muButton3.innerText = Frapino[2];
+
+function back(){
+  index--;
+  output.innerText = questionsCoffee[indeex];
+}
+
+function myFunction(reference) {
+  console.log("BUTTON PUSHED! = " + reference);
+  // Store the reference to which button was pushed
+  input[index] = (reference);
+  index++;
+
+  //General questions answers
+  output.innerText = questionsCoffee[0];
+  myButton1.innerText = "Small";
+  myButton2.innerText = "Standart";
+  myButton3.style.visibility = "hidden";
+
+  // 1. Questions answers
+  output.innerText = questionsCoffee[1];
+  myButton1.innerText = "9g";
+  myButton2.innerText = "18g";
+  myButton3.style.visibility = "vissible";
+  myButton3.innerText = "36g";
+
+  // 2. Questions answers
+  output.innerText = questionsCoffee[2];
+  myButton1.innerText = "50 ml";
+  myButton2.innerText = "100 ml";
+  myButton3.innerText = "150 ml";
+
 
 // Add the click event to the button to run the funcion
-myButton1.addEventListener("click", myFunctionSize);
+//myButton1.addEventListener("click", myFunctionSize);
 
 //myButton2.addEventListener("click", myFunction);
-
+/**
 function myFunctionSize() {
   output.innerText = "Which size would you like?";
   myButton1.innerText = "Small";
   myButton2.innerText = "Standart";
   myButton3.style.visibility = "hidden";
 }
+**/
 /*
 //To find out which one button was pushed
 if(document.getElementById('button1').clicked == true)
@@ -76,5 +137,5 @@ else if(myFunctionSize = myButton2)
   }
 }
 */
-
+}
 </script>
