@@ -12,4 +12,6 @@ For example:
   - added "back" button.
 - 2022-04-13 Worked for 2 hours.
   - Made Latte part work! (right questions to the right answers);
-  
+- 2022-04-19 Worked for 3 hours.
+  - For loop for manage the answers, array to collect the problems, array to give answers.
+  - Work with help of a friend.
