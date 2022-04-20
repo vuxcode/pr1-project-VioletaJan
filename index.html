@@ -127,6 +127,7 @@ function myFunction(reference) {
   myButton3.innerText = answers[4][2];
   }
 
+  //These are the right answers for the perfect coffee
   if(index == 6) {
     if (input[0] === 1 && input[1] === 1) {
       this.validate(smallLatte);
@@ -144,6 +145,7 @@ function myFunction(reference) {
   }
 }
 
+//Pushing the wrong anwers in problem array
 function validate(answers) {
   let problem = [];
   let message = [];
@@ -153,11 +155,12 @@ function validate(answers) {
       }
   }
 
+//Pushing the messages into mesage array
   if (problem.length < 1) {
     alert('Gera kava');
   } else {
     if (problem.includes(2)) {
-    message.push(" r Coffee is too weak/strong")
+    message.push(" Your coffee is too weak/strong")
   }
   if (problem.includes(3)) {
     message.push(" To much or not enough milk")
@@ -169,6 +172,8 @@ function validate(answers) {
     message.push(" Foam problem")
   }
 
+
+  //Giving the final answer about made coffee
   alert('Here whats wrong with a coffee: ' + message);
   }
   
