@@ -3,6 +3,9 @@
 <button id ="button2" onclick="myFunction(2)">Cappuchino</button>
 <button id ="button3" onclick="myFunction(3)">Frappino</button>
 <button id = "back" onclick="back()">Back</button>
+<input id="userinput1" type="radio">answer1</input>
+<input id="userinput2" type="radio">answer2</input>
+<input id="userinput3" type="radio">answer3</input>
 
 <script>
 //Welcome message
@@ -52,8 +55,9 @@ var answers2 = [
 
 var smallLatte = [1, 1, 2, 2, 2, 1];
 var bigLatte = [1, 2, 3, 3, 3, 1];
-var cappuchino = [];
-var frapping = [];
+var cappuchino = [2, 1, 3, 2, 2, 2];
+var smallFrappino = [3, 1, 3, 1, 1 || 2 || 3, 1, 2, 1 || 2]; // can I write like this?
+var bigFrappino = [3, 2, 3, 1 || 2 || 3, 2, 2, 1 || 2]; 
 
 //Store input in an array
 var input = [];
@@ -63,6 +67,9 @@ console.log(input);
 var myButton1 = document.getElementById("button1");
 var myButton2 = document.getElementById("button2");
 var myButton3 = document.getElementById("button3");
+//var radioInput = document.getElementById("userinput");
+
+
 //console.log(myButton1)
 //console.log(myButton2)
 //console.log(myButton3)
@@ -174,7 +181,7 @@ function validate(answers) {
 
 
   //Giving the final answer about made coffee
-  alert('Here whats wrong with a coffee: ' + message);
+  alert('Here is what is wrong with your drink: ' + message);
   }
   
 

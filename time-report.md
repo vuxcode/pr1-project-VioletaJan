@@ -15,3 +15,5 @@ For example:
 - 2022-04-19 Worked for 3 hours.
   - For loop for manage the answers, array to collect the problems, array to give answers.
   - Work with help of a friend.
+- 2022-04-25 Worked for 1 hour.
+  Try to add radio buttons for frappino.
