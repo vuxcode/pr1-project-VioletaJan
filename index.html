@@ -50,10 +50,10 @@ var answers2 = [
 ["Yes", "No"]
 ]
 
-let smallLatte = [1, 1, 2, 2, 2, 1];
-let bigLatte = [1, 2, 3, 3, 3, 1];
-let cappuchino = [];
-let frapping = [];
+var smallLatte = [1, 1, 2, 2, 2, 1];
+var bigLatte = [1, 2, 3, 3, 3, 1];
+var cappuchino = [];
+var frapping = [];
 
 //Store input in an array
 var input = [];
@@ -147,9 +147,9 @@ function myFunction(reference) {
 
 //Pushing the wrong anwers in problem array
 function validate(answers) {
-  let problem = [];
-  let message = [];
-  for (let i = 0; i < input.length; i++) {
+  var problem = [];
+  var message = [];
+  for (var i = 0; i < input.length; i++) {
       if (input[i] !== answers[i]) {
         problem.push(i);
       }
@@ -157,7 +157,7 @@ function validate(answers) {
 
 //Pushing the messages into mesage array
   if (problem.length < 1) {
-    alert('Gera kava');
+    alert("You are a master barista!");
   } else {
     if (problem.includes(2)) {
     message.push(" Your coffee is too weak/strong")
