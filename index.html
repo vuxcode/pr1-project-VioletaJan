@@ -3,6 +3,7 @@
 <button id ="button2" onclick="myFunction(2)">Cappuchino</button>
 <button id ="button3" onclick="myFunction(3)">Frappino</button>
 <button id = "back" onclick="back()">Back</button>
+
 <input id="userinput1" type="radio">answer1</input>
 <input id="userinput2" type="radio">answer2</input>
 <input id="userinput3" type="radio">answer3</input>
@@ -67,21 +68,28 @@ console.log(input);
 var myButton1 = document.getElementById("button1");
 var myButton2 = document.getElementById("button2");
 var myButton3 = document.getElementById("button3");
-//var radioInput = document.getElementById("userinput");
+
+//Create variables to the radio inputs for frapino
+var radioInput1 = document.getElementById("userinput1");
+var radioInput2 = document.getElementById("userinput2");
+var radioInput3 = document.getElementById("userinput3");
+
+console.log(userinput1);
+console.log(userinput2);
+console.log(userinput3);
 
 
-//console.log(myButton1)
-//console.log(myButton2)
-//console.log(myButton3)
-var output = document.getElementById("output");
+var output = document.getElementById("output");  // what is this?
 
+//Create variable for collecting the questions in an array
 var index = 0;  
 output.innerText = questionsCoffee[index];
 
 myButton1.innerText = Latte[0];
 myButton2.innerText = Cappuchino[1];
-muButton3.innerText = Frapino[2];
+myButton3.innerText = Frapino[2];
 
+// create back funktion
 function back(){
   index--;
   output.innerText = questionsCoffee[index];
@@ -189,71 +197,14 @@ function validate(answers) {
 }
 
 
-/*
-switch (input){
+//Create variable for collecting the answers for frappino in an array
+var index2 = 0;  
+output.innerText = questionsFrappino[index];
 
-  case "[1,1,1,1,1,1]":
-    prompt("Your coffee is too week!")
-    break;
-    case "[1,2,1,1,1,1]":
-    prompt("Not good...")
-    break;
-}
-*/
-
-  //FRAPINO
-  /*
-  function myFunction3 (reference) {
-  console.log("BUTTON PUSHED! = " + reference);
-  // Store the reference to which button was pushed
-  input2[index2] = (reference);
-  index2++;
-  
-  if (index2 == 1){
-  output.innerText = questionsFrapino[index];
-  myButton1.innerText = answers2[0][0];
-  myButton2.innerText = answers2[0][1];
-  myButton3.style.visibility = "hidden";
-  }
-
-  if (index2 == 2){
-  output.innerText = questionsFrapino[index];
-  myButton1.innerText = answers2[1][0];
-  myButton2.innerText = answers2[1][1];
-  myButton3.style.visibility = "visible";
-  myButton3.innerText = answers2[1][2];
-  }
-*/
-
-// ORGANIZE THE ANSWERS FOR INPUTS
-/*
-if (input = [1,1,1,1,1,1]){
- document.write("Your cofffe is tasteless and cold!");
-
- else if (input = [1,2,1,1,1,1]){
- document.write("Oh no, it was too much milk, you need to start again!");
- }
-}
-
-OR
-
-switch(input) {
-  case "[1,1,1,1,1,1]":
-    document.write("Your cofffe is tasteless and cold!");
-    break;
-  case "[1,2,1,1,1,1]":
-    document.write("Oh no, it was too much milk, you need to start again!");
-    break;
-  default:
+radioInput1.innerText = answerFirst[0];
+radioInput2.innerText = answerSecond[1];
+radioInput3.innerText = answerThird[2];
 
 
-  OR
-
-  Should I use a for loop, to go through the answers and stop at the point then
-  it doesn't make sence to go futher. (If choose small size and too much milk, we can run the 
-  program again.)
-
-
-*/
 
 </script>
