@@ -16,4 +16,6 @@ For example:
   - For loop for manage the answers, array to collect the problems, array to give answers.
   - Work with help of a friend.
 - 2022-04-25 Worked for 1 hour.
-  Try to add radio buttons for frappino.
+  - Tried to add radio buttons for frappino.
+- 2022-04-26 Worked for 0,3 hour.
+  - Tried to fix frappino problem. Lost.
