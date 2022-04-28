@@ -1,12 +1,9 @@
 <h1 id="output"></h1>
 <button id ="button1" onclick="myFunction(1)">Latte</button>
 <button id ="button2" onclick="myFunction(2)">Cappuchino</button>
-<button id ="button3" onclick="myFunction(3)">Frappino</button>
+<button id ="button3" onclick="myFunction(3)">Frapino</button>
 <button id = "back" onclick="back()">Back</button>
 
-<input id="userinput1" type="radio">answer1</input>
-<input id="userinput2" type="radio">answer2</input>
-<input id="userinput3" type="radio">answer3</input>
 
 <script>
 //Welcome message
@@ -14,6 +11,9 @@
 
 // Create variables in array
 var coffee = ["Latte", "Cappuchino", "Frapino"];
+var questionsAll = [questionsCoffee, questionsFrapino];
+var chosenQuestions = 0;
+
 
 //Create questions for caffee
 var questionsCoffee =[
@@ -54,6 +54,7 @@ var answers2 = [
 ["Yes", "No"]
 ]
 
+//These are the right array for the perfect drink.
 var smallLatte = [1, 1, 2, 2, 2, 1];
 var bigLatte = [1, 2, 3, 3, 3, 1];
 var cappuchino = [2, 1, 3, 2, 2, 2];
@@ -69,27 +70,20 @@ var myButton1 = document.getElementById("button1");
 var myButton2 = document.getElementById("button2");
 var myButton3 = document.getElementById("button3");
 
-//Create variables to the radio inputs for frapino
-var radioInput1 = document.getElementById("userinput1");
-var radioInput2 = document.getElementById("userinput2");
-var radioInput3 = document.getElementById("userinput3");
-
-console.log(userinput1);
-console.log(userinput2);
-console.log(userinput3);
-
-
-var output = document.getElementById("output");  // what is this?
+//// Finding the output element on the screen
+var output = document.getElementById("output");
 
 //Create variable for collecting the questions in an array
 var index = 0;  
 output.innerText = questionsCoffee[index];
+console.log ("Output updated!");
 
-myButton1.innerText = Latte[0];
-myButton2.innerText = Cappuchino[1];
-myButton3.innerText = Frapino[2];
+// These three lines are causing an error so the program STOPS!
+// myButton1.innerText = Latte[0];
+// myButton2.innerText = Cappuchino[1];
+// myButton3.innerText = Frapino[2];
 
-// create back funktion
+// create back funktion NOT WORKING!
 function back(){
   index--;
   output.innerText = questionsCoffee[index];
@@ -102,12 +96,17 @@ function myFunction(reference) {
   index++;
   
 
-  //General questions answers
+  //General questions answers 
   if (index == 1){
   output.innerText = questionsCoffee[index];
   myButton1.innerText = answers[0][0];
   myButton2.innerText = answers[0][1];
   myButton3.style.visibility = "hidden";
+
+  //output.innerText = questionsFrapino[index];
+  //myButton1.innerText = answers2[0][0];
+  //myButton2.innerText = answers2[0][1];
+  //myButton3.style.visibility = "hidden";
   }
   //console.log ("works 1");
 
@@ -117,14 +116,15 @@ function myFunction(reference) {
   myButton2.innerText = answers[1][1];
   myButton3.style.visibility = "visible";
   myButton3.innerText = answers[1][2];
+
   }
-  //console.log ("works 2");
 
   if (index == 3){
   output.innerText = questionsCoffee[index];
   myButton1.innerText = answers[2][0];
   myButton2.innerText = answers[2][1];
   myButton3.innerText = answers[2][2];
+
   }
   //console.log ("works 3");
 
@@ -133,6 +133,7 @@ function myFunction(reference) {
   myButton1.innerText = answers[3][0];
   myButton2.innerText = answers[3][1];
   myButton3.innerText = answers[3][2];
+
   }
 
   if (index == 5){
@@ -140,22 +141,41 @@ function myFunction(reference) {
   myButton1.innerText = answers[4][0];
   myButton2.innerText = answers[4][1];
   myButton3.innerText = answers[4][2];
+
+  
+  /*
+  if (index == 6){
+  output.innerText = questionsFrapino[index];
+  myButton1.innerText = answers[5][0];
+  myButton2.innerText = answers[5][1];
+  myButton3.innerText = answers[5][2];
+
+  
+  if (index == 7){
+  output.innerText = questionsFrapino[index];
+  myButton1.innerText = answers2[6][0];
+  myButton2.innerText = answers2[6][1];
+  myButton3.innerText = answers2[6][2];
+*/
+
   }
 
   //These are the right answers for the perfect coffee
   if(index == 6) {
-    if (input[0] === 1 && input[1] === 1) {
+    if (input[0] == 1 && input[1] == 1) {
       this.validate(smallLatte);
     }
-    if (input[0] === 1 && input[1] === 2) {
+    if (input[0] == 1 && input[1] == 2) {
       this.validate(bigLatte);
   }
-    if (input[0] === 2) {
+    if (input[0] == 2) {
       this.validate(cappuchino);
     }
-    if (input[0] === 3) {
-      this.validate(frapping);
-    }
+    //if (input[0] == 3 && input[1] == 3) {
+      //this.validate(smallFrapino);
+    //}
+    //if (input[0] == 3 && input[1] == 3) {
+   //   this.validate(smallFrapino);
 
   }
 }
@@ -196,14 +216,6 @@ function validate(answers) {
   return message;
 }
 
-
-//Create variable for collecting the answers for frappino in an array
-var index2 = 0;  
-output.innerText = questionsFrappino[index];
-
-radioInput1.innerText = answerFirst[0];
-radioInput2.innerText = answerSecond[1];
-radioInput3.innerText = answerThird[2];
 
 
 

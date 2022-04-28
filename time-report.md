@@ -19,3 +19,5 @@ For example:
   - Tried to add radio buttons for frappino.
 - 2022-04-26 Worked for 0,3 hour.
   - Tried to fix frappino problem. Lost.
+- 2022-04-28 Worked for 2 hours.
+  - Tried to get frappino questions. Managed to give frapino questions for all drinks.
