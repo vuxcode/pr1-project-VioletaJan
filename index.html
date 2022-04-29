@@ -58,8 +58,8 @@ var answers2 = [
 var smallLatte = [1, 1, 2, 2, 2, 1];
 var bigLatte = [1, 2, 3, 3, 3, 1];
 var cappuchino = [2, 1, 3, 2, 2, 2];
-var smallFrappino = [3, 1, 3, 1, 1 || 2 || 3, 1, 2, 1 || 2]; // can I write like this?
-var bigFrappino = [3, 2, 3, 1 || 2 || 3, 2, 2, 1 || 2]; 
+var smallFrappino = [3, 1, 3, 1, "any", 1, 2, "any"];
+var bigFrappino = [3, 2, 3, "any", 2, 2, "any"]; 
 
 //Store input in an array
 var input = [];
@@ -74,6 +74,7 @@ var myButton3 = document.getElementById("button3");
 var output = document.getElementById("output");
 
 //Create variable for collecting the questions in an array
+//This gives the general question because 0 is my first question on coffeequestions
 var index = 0;  
 output.innerText = questionsCoffee[index];
 console.log ("Output updated!");
@@ -92,14 +93,18 @@ function back(){
 function myFunction(reference) {
   console.log("BUTTON PUSHED! = " + reference);
   // Store the reference to which button was pushed
-  input[index] = (reference);
+  // this line is showing that input is what user chooses. index is the question
+  // and references is to collect everything into array
+
+  input[index] = reference;
+  console.log(input);
   index++;
   
 
   //General questions answers 
   if (index == 1){
   output.innerText = questionsCoffee[index];
-  myButton1.innerText = answers[0][0];
+  myButton1.innerText = answers[0][0]; // [0] firs answers line [0] answer smalll
   myButton2.innerText = answers[0][1];
   myButton3.style.visibility = "hidden";
 
@@ -161,35 +166,45 @@ function myFunction(reference) {
   }
 
   //These are the right answers for the perfect coffee
+  //Input 0 is my first question which drink I choose
+  // index 6 is kai einam per pirmus 5 klausimus, 6 duoda ats apibendrinimus
   if(index == 6) {
     if (input[0] == 1 && input[1] == 1) {
+      console.log("This is a small latte.")
       this.validate(smallLatte);
     }
     if (input[0] == 1 && input[1] == 2) {
+      console.log("This is a big latte.")
       this.validate(bigLatte);
-  }
+    }
     if (input[0] == 2) {
+      console.log("This is a cappuchino.")
       this.validate(cappuchino);
     }
-    //if (input[0] == 3 && input[1] == 3) {
-      //this.validate(smallFrapino);
-    //}
-    //if (input[0] == 3 && input[1] == 3) {
-   //   this.validate(smallFrapino);
+    if (input[0] == 3 && input[1] == 1) {
+      console.log("This is a small frapino.")
+      this.validate(smallFrapino);
+    }
+    if (input[0] == 3 && input[1] == 2) {
+      console.log("This is a big frapino.")
+      this.validate(smallFrapino);
+    }
 
   }
 }
 
 //Pushing the wrong anwers in problem array
-function validate(answers) {
+function validate(correctAnswers) {
+  
   var problem = [];
   var message = [];
+  console.log(correctAnswers);
   for (var i = 0; i < input.length; i++) {
-      if (input[i] !== answers[i]) {
+      if (input[i] != correctAnswers[i]) {
         problem.push(i);
       }
   }
-
+console.log(problem);
 //Pushing the messages into mesage array
   if (problem.length < 1) {
     alert("You are a master barista!");
