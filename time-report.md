@@ -17,7 +17,13 @@ For example:
   - Work with help of a friend.
 - 2022-04-25 Worked for 1 hour.
   - Tried to add radio buttons for frappino.
-- 2022-04-26 Worked for 0,3 hour.
+- 2022-04-26 Worked for 0,5 hour.
   - Tried to fix frappino problem. Lost.
 - 2022-04-28 Worked for 2 hours.
   - Tried to get frappino questions. Managed to give frapino questions for all drinks.
+- 2022-05-08 Worked for 1 hour.
+ - Deleted Frapino option.
+ - Added Cortado option.
+ - Tried to add a timer. Failed.
+
+ //12,5
