@@ -1,4 +1,8 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet">
 
 <h1 id="output"></h1>
 <button id ="button1" onclick="myFunction(1)">Latte</button>
@@ -6,31 +10,32 @@
 <button id ="button3" onclick="myFunction(3)">Cortado</button>
 <button id = "back" onclick="back()">Back</button>
 
-<p id="countdown">1:40</p>
+</head>
+<body>
 
 
 <script>
-//Welcome message
-//var welcome = confirm("Welcome to Cofee Making Game! Would you like to start?");
+//Welcome message 
+var welcomeFunction = confirm("Welcome to Cofee Making Game! Would you like to start?");
 
-//Create a COUNTDOWN funktion
-/*const startingMinutes = 1;
-var time = startingMinutes * 60;
+//Create a time counting function
+setTimeout(confirm, 10000);
+console.log("Start counting");
 
-const countdownEl = document.getElementById('countdown');
+var countFrom = 0;
 
-setInterval(updateCountdown, 200);
+function checkTime(){
+  console.log (countFrom);
 
-function updateCountdown(){
-  const minutes = Math.floor(time /60);
-  var seconds = time % 60;
-
-  seconds = second < 2 ? '0' + seconds : seconds;
-
-  countdownEl.innerHTML = `${minutes}:${seconds}`;
-  time --;
+  if (countFrom > 0 && countFrom < 10000){
+    countFrom++;
+    console.log(countFrom);
+  }
+  else{
+    alert("It's too long to wait for coffee!");
+    console.log("Game over");
+  }
 }
-*/
 
 // Create variables in array
 var coffee = ["Latte", "Cappuchino", "Cortado"];
@@ -207,7 +212,7 @@ console.log(problem);
 //if the is 0 problem, I win the game
 //problem checks for right answers from the answer array and then from validate funktion
 //and collect all the problems
-  if (problem.length < 1) {
+  if (problem.length < 1 && countFrom < 10000) {
     alert("You are a master barista!");
   } else {
     if (problem.includes(2)) {
@@ -234,3 +239,5 @@ console.log(problem);
 
 
 </script>
+</body>
+</html>

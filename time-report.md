@@ -25,5 +25,8 @@ For example:
  - Deleted Frapino option.
  - Added Cortado option.
  - Tried to add a timer. Failed.
+- 2022-05-18 Worked for 1 hour.
+  - Tried to add a timer. Not working.
+  - Created stylsheet file and connected to html.
 
  //12,5
