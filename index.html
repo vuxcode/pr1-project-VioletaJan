@@ -19,9 +19,16 @@
 var welcomeFunction = confirm("Welcome to Cofee Making Game! Would you like to start?");
 
 //Create a time counting function
-//var timer = setTimeout(delayedGreeting, 5000);
-//console.log("Start counting");
+var timer = setTimeout(runTheTimer, 1000);
+console.log("Start counting");
 
+function runTheTimer(){
+timer;
+console.log("timer has started");
+}
+
+/*
+var timer = setTimeout(delayedGreeting, 1000);
 function delayedGreeting(){
   var confirmation = confirm("Welcome to Cofee Making Game! Would you like to start?");
   if (confirmation) {
@@ -31,6 +38,7 @@ function delayedGreeting(){
   alert("Ok, see you next time!");
   }
 }
+*/
 
 function stopTimer(){
   //Stop the timer
@@ -97,7 +105,7 @@ myButton5.style.visibility = "hidden";
 // myButton2.innerText = Cappuchino[1];
 // myButton3.innerText = Frapino[2];
 
-// create back funktion WORKING ONLY WITH QUESTIONS NOT ANSWERS!!!!!!
+// create back funktion 
 function back(){
   //stop Timer;
   //if the index is on the first question or above
@@ -228,13 +236,13 @@ console.log(problem);
     message.push(" Your coffee is too weak or too strong;")
   }
   if (problem.includes(3)) {
-    message.push("\ntoo much or not enough milk")
+    message.push("\n Too much or not enough milk")
   }
   if (problem.includes(4)) {
-    message.push("\n heat milk problem")
+    message.push("\n Heat milk problem")
   }
   if (problem.includes(5)) {
-    message.push("\n foam problem.")
+    message.push("\n Foam problem.")
   }
 
 

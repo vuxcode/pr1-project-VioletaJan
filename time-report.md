@@ -30,5 +30,7 @@ For example:
   - Created stylsheet file and connected to html.
 - 2022-05-18 Worked for 2 hours.
  - CSS stylesheet.
+- 2022-05-19 Worked for 2 hours.
+  - Tried to make timer work. Failed.
 
- //15,5
+ //17,5
