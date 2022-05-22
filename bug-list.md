@@ -12,3 +12,4 @@
 8. Timer doesnt work. It works, but not as expected.
 9. Restart the game if finished.
 10. Background image is not full screen.
+11. How to return after playing to the firs question.

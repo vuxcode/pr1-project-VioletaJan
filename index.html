@@ -89,7 +89,7 @@ var myButton3 = document.getElementById("button3");
 var myButton4 = document.getElementById("back");
 var myButton5 = document.getElementById("restart");
 
-//// Finding the output element on the screen
+// Finding the output element on the screen
 var output = document.getElementById("output");
 
 //Create variable for collecting the questions in an array
@@ -135,6 +135,8 @@ function updateScreen(){
   myButton3.style.visibility = "hidden";
   myButton4.style.visibility = "visible";
   myButton5.style.visibility = "visible";
+  //myButton4.disabled = true; NOT WORKING!!!!!!!
+
 
   //output.innerText = questionsFrapino[index];
   //myButton1.innerText = answers2[0][0];
@@ -252,6 +254,10 @@ console.log(problem);
   
 
   return message;
+
+// Return to the welcome message after pressing OK.
+  //if (confirm = true)
+  //welcomeFunction;
 }
 
 </script>

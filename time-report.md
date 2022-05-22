@@ -32,5 +32,7 @@ For example:
  - CSS stylesheet.
 - 2022-05-19 Worked for 2 hours.
   - Tried to make timer work. Failed.
-
- //17,5
+- 20022-05-22 Worked for 2 hours.
+  - Tried to make timer work. Failed.
+  - Tried to change demo version as I wanted. Didn't work as expected. 
+ //19,5
