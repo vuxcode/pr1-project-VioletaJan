@@ -18,10 +18,14 @@ h1{
 }
 
 div{
+
     color: whitesmoke;
     text-shadow: #422d11;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(6px) saturate(50%);
+    padding: 30px;
+    margin: 43px auto 0px;
+    width: 224px;
 }
 .styled{
 
