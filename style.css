@@ -2,16 +2,22 @@
 
 *{
     font-family: 'Baloo Bhaijaan 2', sans-serif;
-    text-align: center;
+    text-align: center;    
 }
 body {
   background-image: url(https://www.wallpaperflare.com/static/481/479/767/coffee-grains-leaves-board-wallpaper.jpg);
   width: 100%;
-  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover ;
     }
 h1{
+    color: whitesmoke;
+    text-shadow: #422d11;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(6px) saturate(50%);
+}
+
+div{
     color: whitesmoke;
     text-shadow: #422d11;
     -webkit-backdrop-filter: blur(10px);
