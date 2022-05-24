@@ -38,6 +38,7 @@ For example:
 - 2022-05-23 Worked for 2,5 hours.
   - Solved bugs with buttons.
   - Changed the appearance then finishing the game.
-- 2022-05-24 Worked for 2,5 hour.
+- 2022-05-24 Worked for 3,5 hour.
   - Added a timer (still not the final result, but part of it works)
- //24,5
+  - Project summary and user guide.
+ //25,5
