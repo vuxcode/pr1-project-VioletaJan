@@ -21,7 +21,6 @@
 // Create variables in array
 var coffee = ["Latte", "Cappuchino", "Cortado"];
 
-
 //Create questions for caffee
 var questionsCoffee =[
   "WELCOME TO COFFEE MAKING GAME! \n\nPlease choose a coffee you want to make: ",
@@ -41,13 +40,11 @@ var answers = [
 ]
 //console.log(answers);
 
-
 //These are the right array for the perfect drink.
 var smallLatte = [1, 1, 2, 2, 2, 1];
 var bigLatte = [1, 2, 3, 3, 3, 1];
 var cappuchino = [2, 1, 3, 2, 2, 2];
 var cortado = [3, 2, 1, 1, 1, 1];
-
 
 //Store input in an array
 var input = [];
@@ -72,12 +69,7 @@ console.log ("Output updated!");
 myButton4.style.visibility = "hidden";
 myButton5.style.visibility = "hidden";
 
-// These three lines are causing an error so the program STOPS!
-// myButton1.innerText = Latte[0];
-// myButton2.innerText = Cappuchino[1];
-// myButton3.innerText = Frapino[2];
-
-// create back funktion 
+// Create back funktion 
 function back(){
   //stop Timer;
   //if the index is on the first question or above
@@ -91,11 +83,9 @@ function back(){
   updateScreen();
  
 }
-
+//Create restart function to go back to the home page
 function restart() {
-  // Reset the index to 1
   location.reload()
-  //index = 1;
   // Update the display
   updateScreen();
 }
@@ -109,8 +99,6 @@ function updateScreen(){
   myButton4.style.visibility = "visible";
   myButton5.style.visibility = "visible";
   myButton4.disabled = true; 
-  //myButton5.disabled = true; 
-
   }
   //console.log ("works 1");
 
@@ -128,7 +116,6 @@ function updateScreen(){
   myButton1.innerText = answers[2][0];
   myButton2.innerText = answers[2][1];
   myButton3.innerText = answers[2][2];
-
   }
   //console.log ("works 3");
 
@@ -137,7 +124,6 @@ function updateScreen(){
   myButton1.innerText = answers[3][0];
   myButton2.innerText = answers[3][1];
   myButton3.innerText = answers[3][2];
-
   }
 
   if (index == 5){
@@ -148,8 +134,10 @@ function updateScreen(){
   }
 }
 
+//Create function to collect the user inputs
 function myFunction(reference) {
   console.log("BUTTON PUSHED! = " + reference);
+
   // Store the reference to which button was pushed
   // this line is showing that input is what user chooses. index is the question
   // and references is to collect everything into array
@@ -184,7 +172,6 @@ function myFunction(reference) {
   clearTimeout(timer);
   // Output a message to say that the button was used
   console.log("The timer was stopped!");
-
   }
 }
 
@@ -200,6 +187,8 @@ function validate(correctAnswers) {
       }
   }
 console.log(problem);
+
+
 //Pushing the messages into mesage array
 //if the is 0 problem, I win the game
 //problem checks for right answers from the answer array and then from validate funktion
@@ -229,7 +218,6 @@ console.log(problem);
   myButton2.style.visibility = "hidden";  
   myButton3.style.visibility = "hidden";
   myButton4.style.visibility = "hidden";
-
 }
 
 //Create a time counting function and variables
@@ -237,8 +225,6 @@ var number = 0;
 var timer;
 
 function count() {
-// Store a number
-
   // Output the number
   console.log(number);
   // Update the number
@@ -247,8 +233,6 @@ function count() {
   clearTimeout(timer);
   timer = setTimeout(count, 1000);
 }
-
-
 
 </script>
 </body>
