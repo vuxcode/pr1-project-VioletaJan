@@ -35,4 +35,8 @@ For example:
 - 20022-05-22 Worked for 2 hours.
   - Tried to make timer work. Failed.
   - Tried to change demo version as I wanted. Didn't work as expected. 
- //19,5
+- 2022-05-23 Worked for 2,5 hours.
+  - Solved bugs with buttons.
+  - Changed the appearance then finishing the game.
+- 2022-05-24
+ //22

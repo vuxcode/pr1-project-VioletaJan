@@ -17,7 +17,7 @@
 <body>
 <script>
 //Welcome message 
-var welcomeFunction = confirm("Welcome to Cofee Making Game! Would you like to start?");
+//var welcomeFunction = confirm("Welcome to Cofee Making Game! Would you like to start?");
 
 //Create a time counting function
 var timer = setTimeout(runTheTimer, 1000);
@@ -54,7 +54,7 @@ var coffee = ["Latte", "Cappuchino", "Cortado"];
 
 //Create questions for caffee
 var questionsCoffee =[
-  "Please choose a coffee you want to make: ",
+  "WELCOME TO COFFEE MAKING GAME! \nPlease choose a coffee you want to make: ",
   "1. What size would you like?",
   "2. How many grams of espresso you should grind?",
   "3. How much milk would you like to add?",
@@ -123,7 +123,8 @@ function back(){
 
 function restart() {
   // Reset the index to 1
-  index = 1;
+  location.reload()
+  //index = 1;
   // Update the display
   updateScreen();
 }
@@ -136,13 +137,9 @@ function updateScreen(){
   myButton3.style.visibility = "hidden";
   myButton4.style.visibility = "visible";
   myButton5.style.visibility = "visible";
-  //myButton4.disabled = true; NOT WORKING!!!!!!!
+  myButton4.disabled = true; 
+  //myButton5.disabled = true; 
 
-
-  //output.innerText = questionsFrapino[index];
-  //myButton1.innerText = answers2[0][0];
-  //myButton2.innerText = answers2[0][1];
-  //myButton3.style.visibility = "hidden";
   }
   //console.log ("works 1");
 
@@ -152,7 +149,7 @@ function updateScreen(){
   myButton2.innerText = answers[1][1];
   myButton3.style.visibility = "visible";
   myButton3.innerText = answers[1][2];
-
+  myButton4.disabled = false; 
   }
 
   if (index == 3){
@@ -198,19 +195,19 @@ function myFunction(reference) {
   if(index == 6) {
     if (input[0] == 1 && input[1] == 1) {
       console.log("This is a small latte.")
-      this.validate(smallLatte);
+      validate(smallLatte);
     }
     if (input[0] == 1 && input[1] == 2) {
       console.log("This is a big latte.")
-      this.validate(bigLatte);
+      validate(bigLatte);
     }
     if (input[0] == 2) {
       console.log("This is a cappuchino.")
-      this.validate(cappuchino);
+      validate(cappuchino);
     }
     if (input[0] == 3 ) {
       console.log("This is a Cortado.")
-      this.validate(cortado);
+      validate(cortado);
     }
 
   }
@@ -236,7 +233,7 @@ console.log(problem);
     alert("WOW! You are a Master Barista!");
   } else {
     if (problem.includes(2)) {
-    message.push(" Your coffee is too weak or too strong;")
+    message.push(" Your coffee is too weak or too strong")
   }
   if (problem.includes(3)) {
     message.push("\n Too much or not enough milk")
@@ -250,18 +247,18 @@ console.log(problem);
 
 
   //Giving the final answer about made coffee
-  alert('You have where to improve! Here is what is wrong with your coffee: \n' + message);
+  output.innerText = "You have where to improve!\nHere is what's wrong with your coffee: \n" + message + "\nTry again and become a Master Barista!";
   }
-  
+  myButton1.style.visibility = "hidden";
+  myButton2.style.visibility = "hidden";  
+  myButton3.style.visibility = "hidden";
+  myButton4.style.visibility = "hidden";
 
   return message;
 }
-// Return to the welcome message after pressing OK.
- //var confirmation = mesage;
-  //if (confirmation = true){
-//updateScreen();
- 
-//}
+// Return to the first choice after pressing OK.
+
+
 </script>
 </body>
 </html>
