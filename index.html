@@ -6,7 +6,8 @@
 
 <div>
 <h1 id="output"></h1>
-<button id ="button1" onclick="myFunction(1)" class = "styled">Latte</button>
+<h2 id="output2"></h2>
+<button id ="button1" onclick="myFunction(1); count()" class = "styled">Latte</button>
 <button id ="button2" onclick="myFunction(2)" class = "styled">Cappuchino</button>
 <button id ="button3" onclick="myFunction(3)" class = "styled">Cortado</button>
 <button id = "back" onclick="back()" class = "styled2">Back</button>
@@ -16,37 +17,6 @@
 </head>
 <body>
 <script>
-//Welcome message 
-//var welcomeFunction = confirm("Welcome to Cofee Making Game! Would you like to start?");
-
-//Create a time counting function
-var timer = setTimeout(runTheTimer, 1000);
-console.log("Start counting");
-
-function runTheTimer(){
-timer;
-console.log("timer has started");
-}
-
-/*
-var timer = setTimeout(delayedGreeting, 1000);
-function delayedGreeting(){
-  var confirmation = confirm("Welcome to Cofee Making Game! Would you like to start?");
-  if (confirmation) {
-  alert("Let's GO!");
-  }
-  else {
-  alert("Ok, see you next time!");
-  }
-}
-*/
-
-function stopTimer(){
-  //Stop the timer
-  clearTimeout(timer);
-  console.log("Timer has stopped");
-  alert("It takes too long to wait! Hurry up next time!")
-}
 
 // Create variables in array
 var coffee = ["Latte", "Cappuchino", "Cortado"];
@@ -54,7 +24,7 @@ var coffee = ["Latte", "Cappuchino", "Cortado"];
 
 //Create questions for caffee
 var questionsCoffee =[
-  "WELCOME TO COFFEE MAKING GAME! \nPlease choose a coffee you want to make: ",
+  "WELCOME TO COFFEE MAKING GAME! \n\nPlease choose a coffee you want to make: ",
   "1. What size would you like?",
   "2. How many grams of espresso you should grind?",
   "3. How much milk would you like to add?",
@@ -92,6 +62,7 @@ var myButton5 = document.getElementById("restart");
 
 // Finding the output element on the screen
 var output = document.getElementById("output");
+var output2 = document.getElementById("output2");
 
 //Create variable for collecting the questions in an array
 //This gives the general question because 0 is my first question on coffeequestions
@@ -192,7 +163,7 @@ function myFunction(reference) {
   //These are the right answers for the perfect coffee
   //Input 0 is my first question which drink I choose
   // index 6 is kai einam per pirmus 5 klausimus, 6 duoda ats apibendrinimus
-  if(index == 6) {
+  if(index >= 6) {
     if (input[0] == 1 && input[1] == 1) {
       console.log("This is a small latte.")
       validate(smallLatte);
@@ -209,6 +180,10 @@ function myFunction(reference) {
       console.log("This is a Cortado.")
       validate(cortado);
     }
+  // Clear the timeout for the timer variable
+  clearTimeout(timer);
+  // Output a message to say that the button was used
+  console.log("The timer was stopped!");
 
   }
 }
@@ -247,16 +222,32 @@ console.log(problem);
 
 
   //Giving the final answer about made coffee
-  output.innerText = "You have where to improve!\nHere is what's wrong with your coffee: \n" + message + "\nTry again and become a Master Barista!";
+  output.innerText="";
+  output2.innerText = "THERE IS STILL ROOM FOR IMPROVEMENT...\n \nHere is what's wrong with your coffee: \n" + message + "\n \n TRY AGAIN AND BECOME \nA Master Barista!";
   }
   myButton1.style.visibility = "hidden";
   myButton2.style.visibility = "hidden";  
   myButton3.style.visibility = "hidden";
   myButton4.style.visibility = "hidden";
 
-  return message;
 }
-// Return to the first choice after pressing OK.
+
+//Create a time counting function and variables
+var number = 0;
+var timer;
+
+function count() {
+// Store a number
+
+  // Output the number
+  console.log(number);
+  // Update the number
+  number++;
+  // Update the timer to run the count function again
+  clearTimeout(timer);
+  timer = setTimeout(count, 1000);
+}
+
 
 
 </script>

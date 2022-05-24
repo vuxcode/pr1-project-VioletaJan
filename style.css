@@ -46,7 +46,7 @@ div{
     -o-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
-    margin: auto;
+    margin: 5px auto;
 
 
 }
@@ -67,7 +67,7 @@ div{
     -o-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
-    margin: auto;
+    margin: 30px auto 5px;
 }
 
 .styled3{
@@ -86,7 +86,7 @@ div{
     -o-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
-    margin: auto;
+    margin: 5px auto;
 }
 
 button:hover {
@@ -97,6 +97,6 @@ button:hover {
       background-color: #7e6941;
   }
 
-.message{
+.mesage{
     color: red;
 }
