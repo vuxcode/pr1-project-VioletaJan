@@ -6,14 +6,34 @@ REMEMBER TO "COMMIT" YOUR CHANGES REGULARLY TO SHOW HOW YOU HAVE BUILT THIS PROJ
 
 The final program is not the goal! The aim of the project is to show how you have developed your program, the steps you have taken and the problems you have solved!
 
-# Project Notes
-
-> You can use this section of the file to keep notes about your project as you work on it.
-
 # Project Summary
 
-> Before the final submission date you should include a "PROJECT SUMMARY" in this section here. 
+MY IDEA for this coffee making game is that the program allows to make a chosen coffee by choosing the rigt answers. It gives an output if coffee is too strong, too hot, too week or it is perfect. This program could be used:
+
+1. For guests in coffee shop while waiting their coffee (a guest can compare if he manages to do the perfect virtual coffee while barista is doing the real one.
+2. For new baristas to learn how to make coffee.
+3. For searching of new talents in coffee shop - for example to have this game on a coffee shop page "Career" section.
+
+EXPERIENCE while making the program:
+* It was quite hard to combine separate functions and methods in one program;
+* It felt very good finally fix bugs and get the expected result;
+* It took more time to think about the logic while creating the program than actually writing the code and seeing result.
+
+What could be improved:
+1. A Timer - could be shown on the screen while playing, stop the game if provided time is over, add time penalty for wrong answers.
+2. More choices with different questions.
+3. Restart the game if coffee making choices makes no sence (user chooses small cup and adds too much milk).
+
+TIME BUDGET: I used 28 hours to create this project. 
 
 # User Guide
 
-> Write a clear user guide for how someone should use your program.
+1. Open the program.
+2. There are 3 coffee choices. Choose one and press the button.
+3. You have 20 seconds to finish the game. Otherwise it will stop in the middle of the game and you will need to start over.
+3. First question which pops up on the screen has 2 choices. Select one by pressing the button. 
+4. Next 4 questions have 3 choices each. Choose one by pressing the button.
+5. Press BACK button if you want to go back to the previous question.
+6. Press RETURN button if you want the game to start over.
+7. After 5th question you will get the output on the screen either you did everything right and you are a Master Barista either you will get the output what is wrong with your coffee.
+8. Press RESTART to start the game again.
