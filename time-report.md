@@ -38,7 +38,14 @@ For example:
 - 2022-05-23 Worked for 2,5 hours.
   - Solved bugs with buttons.
   - Changed the appearance then finishing the game.
-- 2022-05-24 Worked for 3,5 hour.
+- 2022-05-24 Worked for 3,5 hours.
   - Added a timer (still not the final result, but part of it works)
   - Project summary and user guide.
- //25,5
+- 2022-05-25 Worked for 1,5 hours.
+  - Fixed CSS bug with transition;
+  - Fixed the backround to be in the whole screen;
+  - Added stop function for timer; Not working as expected;
+- Worked for 1 hour.
+  - Added the timer and it works as expected!
+
+ //28 hours in TOTAL +2 hours during the lessons.

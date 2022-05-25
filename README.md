@@ -24,12 +24,13 @@ What could be improved:
 2. More choices with different questions.
 3. Restart the game if coffee making choices makes no sence (user chooses small cup and adds too much milk).
 
-TIME BUDGET: I already used 27 hours to create this project. I will use last 3 hours to improve with the timer. 
+TIME BUDGET: I used 28 hours to create this project. 
 
 # User Guide
 
 1. Open the program.
 2. There are 3 coffee choices. Choose one and press the button.
+3. You have 20 seconds to finish the game. Otherwise it will stop in the middle of the game and you will need to start over.
 3. First question which pops up on the screen has 2 choices. Select one by pressing the button. 
 4. Next 4 questions have 3 choices each. Choose one by pressing the button.
 5. Press BACK button if you want to go back to the previous question.

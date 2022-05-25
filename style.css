@@ -3,6 +3,8 @@
 *{
     font-family: 'Baloo Bhaijaan 2', sans-serif;
     text-align: center;    
+    margin: 0;
+    padding: 0;
 }
 body {
   background-image: url(https://www.wallpaperflare.com/static/481/479/767/coffee-grains-leaves-board-wallpaper.jpg);
@@ -24,8 +26,8 @@ div{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(6px) saturate(50%);
     padding: 30px;
-    margin: 80px auto 0px;
-    width: 366px;
+    margin: 20px auto 0px;
+    width: 446px;
     border: double;
     border-radius: 10px;
 }
@@ -41,10 +43,6 @@ div{
     font-size: 16px;
     padding: 10px;
     width: 107px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
     cursor: pointer;
     margin: 5px auto;
 
@@ -62,10 +60,6 @@ div{
     font-size: 16px;
     padding: 10px;
     width: 107px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
     cursor: pointer;
     margin: 30px auto 5px;
 }
@@ -81,10 +75,6 @@ div{
     font-size: 16px;
     padding: 10px;
     width: 107px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
     cursor: pointer;
     margin: 5px auto;
 }
